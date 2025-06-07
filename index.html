@@ -93,13 +93,14 @@
 
       <div class="controls">
         <div> <i class="fa-solid fa-backward"></i> </div>
-        <div onclcik="click()"> <i class="fa-solid fa-pause" id="ctrlIcon"></i> </div>
+        <div onclick="click()"> <i class="fa-solid fa-pause" id="ctrlIcon"></i> </div>
         <div> <i class="fa-solid fa-forward"></i> </div>
       </div>
     </div>
 
 
     <script>
+      window.onload=function(){
       let progress = document.getElementById ("progress");
       let song = document.getElementById ("song");
       let ctrlIcon = document.getElementById ("ctrlIcon");
@@ -137,6 +138,7 @@
         ctrlIcon.classList.add("fa-pause");
           ctrlIcon.classList.remove("fa-play")
       }
+      };
     </script>
 
    
